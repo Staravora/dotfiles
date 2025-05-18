@@ -27,6 +27,6 @@ The installation script automatically detects your distribution type and install
 To install this configuration on a new machine:
 
 ```bash
-git clone https://github.com/yourusername/dotfiles.git
+git clone https://github.com/Staravora/dotfiles.git
 cd dotfiles
 ./install.sh
