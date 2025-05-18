@@ -1,0 +1,55 @@
+* {
+    red:                         #ff0000;
+    darkred:                     #990000;
+    black:                       #000000;
+    darkblack:                   #110000;
+    white:                       #ffffff;
+
+    background-color:            @black;
+    border-color:                @red;
+    text-color:                  @red;
+    dark-text-color:             @darkred;
+    main-color:                  @red;
+    highlight:                   @darkred;
+    urgent-color:                #ff0000;
+    selected-color:              @red;
+}
+
+window {
+    border:     1px;
+    text-color: @white;
+    background-color: rgba ( 0, 0, 0, 80 % );
+    padding:    5;
+    text-color: @white;
+    font:       "Hack 12";
+}
+
+entry {
+    border:        0 0 1px 0;
+    border-color:  @red;
+    text-color:    @white;
+}
+
+prompt {
+    text-color:    @red;
+}
+
+inputbar {
+    children: [ prompt, entry ];
+}
+
+listview {
+    cycle:      true;
+    margin:     0 0 -1px 0;
+    scrollbar:  true;
+}
+
+element selected {
+    background-color: @darkblack;
+    text-color:       @white;
+}
+
+element-text, element-icon {
+    background-color: inherit;
+    text-color:       inherit;
+}
